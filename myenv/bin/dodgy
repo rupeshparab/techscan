@@ -1,0 +1,4 @@
+#!/home/rupesh/code/techscan/myenv/bin/python3
+
+import dodgy.run
+dodgy.run.run()

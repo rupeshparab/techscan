@@ -1,0 +1,32 @@
+# see http://www.kennethreitz.org/essays/a-better-pip-workflow
+
+# app
+Django
+celery[redis]
+django-model-utils
+django-webpack-loader
+django.js-vinta
+python-decouple<=4.0
+psycopg2
+
+# heroku
+brotlipy
+django-log-request-id
+dj-database-url
+gunicorn
+opbeat
+whitenoise
+
+# test
+bandit
+coverage
+prospector[with_vulture]
+isort
+safety
+
+# local
+django-naomi
+fixmydjango
+ipython
+model-mommy
+pre-commit
