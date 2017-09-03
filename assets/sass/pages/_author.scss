@@ -1,0 +1,22 @@
+.author {
+  .avatar {
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .overview {
+    padding: 8px 0px 20px 0px;
+    border-bottom: 1px solid #dfdfe0;
+    margin-bottom: 20px;
+  }
+  .repo {
+    border: 1px solid #dfdfe0;
+    border-radius: 10px;
+    padding: 15px;
+    .repo-desc {
+      min-height: 75px;
+    }
+    .repo-meta {
+      margin-right: 15px;
+    }
+  }
+}

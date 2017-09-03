@@ -39,6 +39,10 @@ INSTALLED_APPS = [
 
     'common',
     'users',
+    'home',
+    'django_tables2',
+    'crudbuilder',
+    'tastypie',
 ]
 
 MIDDLEWARE = [

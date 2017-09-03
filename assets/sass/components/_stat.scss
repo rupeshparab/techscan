@@ -1,0 +1,13 @@
+.stat {
+  padding: 20px;
+  div {
+    padding: 10px;
+    span {
+      display: inline-block;
+      &.count {
+        position: absolute;
+        right: 30px;
+      }
+    }
+  }
+}

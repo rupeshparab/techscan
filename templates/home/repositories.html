@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load js %}
+
+
+{% block body %}
+<div id="react-app" class="main-container repositories">
+  <div class="row">
+    <div class="col-3 pl-0">
+      <input type="text" class="form-control input-lg search-repositories" id="search" value="{{ search }}">
+    </div>
+    <div class="col-9 align-self-center search-desc">
+      <div class="desc-item">
+        <span class="desc-name">Repositories</span>
+        <span class="desc-count">282K</span>
+      </div>
+      <div class="desc-item">
+        <span class="desc-name">Code</span>
+        <span class="desc-count">220M</span>
+      </div>
+      <div class="desc-item">
+        <span class="desc-name">Commits</span>
+        <span class="desc-count">2M</span>
+      </div>
+      <div class="desc-item">
+        <span class="desc-name">Issues</span>
+        <span class="desc-count">940K</span>
+      </div>
+      <div class="desc-item">
+        <span class="desc-name">Wikis</span>
+        <span class="desc-count">227K</span>
+      </div>
+    </div>
+  </div>
+  <div class="row result-container">
+    <div class="col-8">
+      <div class="">
+        <h3>282,955 repository results</h3>
+      </div>
+      <div class="result-item">
+        <span class="heading">
+          <a href="/repo/JavaScript">
+            <h2>airbnb/javascript</h2>
+          </a>
+        </span>
+        <span>
+          JavaScript Style Guide
+        </span>
+        <div class="tags">
+          <span><a href="/">New</a></span>
+          <span><a href="/">New</a></span>
+        </div>
+        <span class="last-updated">Updated a day ago</span>
+      </div>
+      <div class="result-item">
+        <span class="heading">
+          <a href="/repo/JavaScript">
+            <h2>airbnb/javascript</h2>
+          </a>
+          <span class="repo-meta">
+            <span class="oi oi-star"></span>
+            57.1k
+          </span>
+          <span class="repo-meta">
+            <span class="oi oi-media-record"></span>
+            JavaScript
+          </span>
+        </span>
+        <span>
+          JavaScript Style Guide
+        </span>
+        <div class="tags">
+          <span><a href="/">New</a></span>
+          <span><a href="/">New</a></span>
+        </div>
+        <span class="last-updated">Updated a day ago</span>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card stat">
+        <h2>Languages</h2>
+        <div>
+          <span>JavaScript</span>
+          <span class="count">8,396</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

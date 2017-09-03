@@ -1,0 +1,31 @@
+.result-container {
+  margin-top: 20px;
+  padding: 15px 0;
+  background: white;
+  .result-item {
+    border-top: 2px solid #f0f0f6;
+    padding: 15px 0;
+    margin-right: 10px;
+    .tags {
+      padding: 10px 0;
+      span {
+        background: rgba(81, 207, 250, 0.1);
+        padding: 5px 10px;
+        margin-right: 5px;
+        border-radius: 2px;
+      }
+    }
+    .last-updated {
+      font-size: 14px;
+    }
+    .heading {
+      .repo-meta {
+        float: right;
+        padding-left: 30px;
+        span.oi {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}

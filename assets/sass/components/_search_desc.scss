@@ -1,0 +1,18 @@
+.search-desc {
+  padding: 5px 20px;
+  background: white;
+  line-height: 2.25rem;
+}
+.desc-item {
+  display: inline-block;
+  &:not(:first-child) {
+    margin-left: 25px;
+  }
+  .desc-count {
+    font-size: 10px;
+    background: #f0f0f6;
+    padding: 5px 8px;
+    border-radius: 10px;
+    margin-left: 5px;
+  }
+}

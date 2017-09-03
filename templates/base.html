@@ -12,11 +12,21 @@
 
     <!-- Webpack rendered CSS -->
     {% render_bundle 'main' 'css' %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-flash.min.css" />
   </head>
 
   <body>
+    <nav class="navbar fixed-top navbar-light bg-faded">
+      <a class="navbar-brand" href="/">
+        <img src="https://dantotsupm.files.wordpress.com/2011/02/screenshot001.png?w=490" width="310" height="85" class="d-inline-block align-top" alt="">
+        <span>TechScan</span>
+      </a>
+    </nav>
     <!-- Body Content -->
     {% block body %}{% endblock %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 
     {% render_bundle 'main' 'js' 'JQUERY' %}
     <!-- django.js -->

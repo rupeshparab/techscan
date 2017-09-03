@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load js %}
+{% load app_tags %}
+
+{% block body %}
+<div class="main-container author">
+  <div class="row result-container">
+    <div class="col-3" class="">
+      <img class="avatar" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" width="200" height="200">
+      <div class="author-desc">
+        <h2>{{user.name}}</h2>
+        <div>
+          <span class="grey">{{user.username}}</span>
+        </div>
+        <div>
+          {{user.desc}}
+        </div>
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="overview">
+        <span class="desc-item">
+          Overview
+        </span>
+        <span class="desc-item">
+          Repositories
+          <span class="desc-count">{{repos|length}}</span>
+        </span>
+        <span class="desc-item">
+          Stars
+          <span class="desc-count">{{repos.stars|cool_number}}</span>
+        </span>
+        <span class="desc-item">
+          Followers
+          <span class="desc-count">{{user.followers|cool_number}}</span>
+        </span>
+      </div>
+      <div class="row">
+        {% for repo in repos %}
+        <div class="col-6">
+          <div class="repo">
+            <span class="heading">
+              <a href="{{repo.url}}">
+                <h3>{{repo.name}}</h3>
+              </a>
+            </span>
+            <div class="repo-desc">{{rep.desc}}</div>
+            <div class="repo-meta-list">
+              {% if repo.language %}
+              <span class="repo-meta">
+                <span class="oi oi-media-record"></span>
+                {{repo.language}}
+              </span>
+              {% endif %}
+              <span class="repo-meta">
+                <span class="oi oi-star"></span>
+                {{repo.stars}}
+              </span>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
