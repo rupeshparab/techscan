@@ -19,6 +19,7 @@ class Technology(models.Model):
 class Author(models.Model):
         name = models.CharField(max_length=100)
         username = models.CharField(max_length=100, unique=True)
+        avatar = models.CharField(max_length=200, default='https://www.shareicon.net/download/128x128/2016/11/14/851937_stack_512x512.png')
         desc = models.CharField(max_length=400, blank=True)
         stars = models.IntegerField(default=0)
         followers = models.IntegerField(default=0)
